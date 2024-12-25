@@ -1,0 +1,30 @@
+html{
+	background-image:url(https://plus.unsplash.com/premium_photo-1664274132563-58233267f8e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+}
+
+.intro{
+	background-color:#b6290b;
+	outline:black;
+	max-width:600px;
+	text-align:center
+}
+
+.traits{
+	background-color:grey;
+	outline:black;
+	max-width:600px;
+}
+
+
+
+.subhead{
+	text-align:center;
+}	
+
+.footer{
+	text-align:center;
+	background-color:black;
+	color:white;
+	font-size:24px;
+	font-style:bold;
+}
