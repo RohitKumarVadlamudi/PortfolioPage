@@ -1,216 +1,33 @@
-/* Sidebar Styling */
-.sidebar {
-  background-color: #464342; /* Solid background color */
-  width: 80px; /* Adjust as needed */
-  height: 100vh;
+/* Main container - Centering content */
+.main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  height: 100vh;
+  background-color: #000000; /* Black background */
+  color: white; /* White text */
+  text-align: center;
 }
 
-/* Logo Styling */
-.logo {
-  background-color: #dedada; /* Light background */
-  color: black;
-  font-size: 24px;
+/* Name styling - Bold and large */
+.name {
+  font-size: 4rem;
   font-weight: bold;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Image styling - centered */
+.image {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 
-/* Icons Container */
-.icons {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Contact info below the image */
+.contact-info {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
-
-/* Default Icon Styling */
-.icon {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: #dedada;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-/* Hover Effect */
-.icon:hover {
-  color: white;
-}
-
-/* Active Icon Styling */
-.icon.active {
-  background-color: #5a5655; /* Slightly darker shade */
-  border-radius: 8px; /* Block effect */
-  padding: 10px;
-  color: #ffffff; /* White to highlight */
-}
-
-/* Main Content Container for Pages */
-.main-content {
-  margin-left: 80px; /* Offset by sidebar width */
-  padding: 20px;
-}
-
-/* Social Page Specific Styles */
-.social-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black; /* Set the background color to black */
-}
-
-.social-icons {
-  display: grid;
-  grid-template-columns: repeat(5, 80px); /* 5 columns for each social icon */
-  gap: 20px;
-  justify-content: center;
-}
-
-.social-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  background-color: #dedada;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-}
-
-.social-icon.active {
-  background-color: #ffffff; /* Highlight the active icon */
-}
-
-.social-icon img {
-  width: 40px;
-  height: 40px;
-}
-
-.social-icon span {
-  display: none; /* Initially hide platform names */
-  position: absolute;
-  background-color: #464342;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  top: -35px;
-}
-
-.social-icon:hover span {
-  display: block; /* Show platform names on hover */
-}
-
-/* Honeycomb Layout for Social Page */
-.honeycomb-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.honeycomb-cell {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #dedada; /* Background color of the honeycomb cell */
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: relative;
-}
-
-.honeycomb-cell img {
-  max-width: 70%;
-  max-height: 70%;
-  object-fit: contain;
-}
-
-/* Active Cell Style (if required, when clicked or hovered) */
-.honeycomb-cell.active {
-  background-color: #ffffff; /* Highlight active cell */
-  border: 2px solid #0077b6; /* Add border to active cell */
-}
-
-/* About Me Page Specific Styling */
-.about-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-}
-
-.about-header {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.about-education,
-.about-intro,
-.about-certifications,
-.about-skills,
-.about-hobbies {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-}
-
-.about-header h1 {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.about-education h2,
-.about-intro h2,
-.about-certifications h2,
-.about-skills h2,
-.about-hobbies h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.about-intro p,
-.about-skills ul,
-.about-hobbies ul {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.about-certifications ul,
-.about-skills ul,
-.about-hobbies ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.about-certifications li,
-.about-skills li,
-.about-hobbies li {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
