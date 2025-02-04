@@ -1,33 +1,46 @@
-/* Main container - Centering content */
-.main-container {
+/* Main Container styling */
+.main-content {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #000000; /* Black background */
-  color: white; /* White text */
-  text-align: center;
+  box-sizing: border-box;
 }
 
-/* Name styling - Bold and large */
-.name {
-  font-size: 4rem;
+.main-content h1 {
+  font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* Image styling - centered */
-.image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  object-fit: cover;
+.main-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
-/* Contact info below the image */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
 .contact-info {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin: 5px 0;
 }
