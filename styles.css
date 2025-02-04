@@ -1,3 +1,8 @@
+.container {
+  display: flex; /* Aligns child elements side by side */
+  height: 100vh; /* Ensures the container takes up the full viewport height */
+}
+
 /* Main Container styling */
 .main-content {
   background-color: black;
@@ -43,4 +48,63 @@
 .contact-info p {
   font-size: 1.2em;
   margin: 5px 0;
+}/* Sidebar Styling */
+.sidebar {
+  background-color: #464342; /* Sidebar background color */
+  width: 80px; /* Adjust the width as needed */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* Logo Styling */
+.logo {
+  background-color: #dedada; /* Logo background color */
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Icons Container */
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Default Icon Styling */
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #dedada;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.icon:hover {
+  color: white;
+}
+
+/* Active Icon Styling */
+.icon.active {
+  background-color: #5a5655; /* Slightly darker shade */
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffffff;
 }
