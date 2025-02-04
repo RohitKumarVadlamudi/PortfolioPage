@@ -78,12 +78,6 @@
   box-sizing: border-box;
   flex-grow: 1; /* Ensure it takes remaining space */
 }
-.social-main-content {
-}
-.projects-main-content {
-}
-.about-main-content {
-}
 
 .main-content h1 {
   font-size: 2.5em;
