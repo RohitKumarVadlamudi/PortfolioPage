@@ -109,3 +109,51 @@
 .social-icon:hover span {
   display: block; /* Show platform names on hover */
 }
+/* Social page - main content */
+.social-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+/* Honeycomb layout - Flex container for the pattern */
+.honeycomb-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual honeycomb cell */
+.honeycomb-cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dedada; /* Background color of the honeycomb cell */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Platform logos inside the honeycomb */
+.honeycomb-cell img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* Active cell style (if required, when clicked or hovered) */
+.honeycomb-cell.active {
+  background-color: #ffffff; /* Highlight active cell */
+  border: 2px solid #0077b6; /* Add border to active cell */
+}
+
