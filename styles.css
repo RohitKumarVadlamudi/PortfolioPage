@@ -1,54 +1,10 @@
+/* Main Container Styling */
 .container {
   display: flex; /* Aligns child elements side by side */
   height: 100vh; /* Ensures the container takes up the full viewport height */
 }
 
-/* Main Container styling */
-.main-content {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
-.main-content h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.main-content p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.contact-info {
-  text-align: center;
-}
-
-.contact-info h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.contact-info p {
-  font-size: 1.2em;
-  margin: 5px 0;
-}/* Sidebar Styling */
+/* Sidebar Styling */
 .sidebar {
   background-color: #464342; /* Sidebar background color */
   width: 80px; /* Adjust the width as needed */
@@ -107,4 +63,52 @@
   border-radius: 8px;
   padding: 10px;
   color: #ffffff;
+}
+
+/* Main Content Styling */
+.main-content {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  flex-grow: 1; /* Ensure it takes remaining space */
+}
+
+.main-content h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  margin: 5px 0;
 }
