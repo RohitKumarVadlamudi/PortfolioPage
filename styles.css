@@ -70,7 +70,6 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +77,12 @@
   height: 100vh;
   box-sizing: border-box;
   flex-grow: 1; /* Ensure it takes remaining space */
+}
+.social-main-content {
+}
+.projects-main-content {
+}
+.about-main-content {
 }
 
 .main-content h1 {
@@ -111,4 +116,63 @@
 .contact-info p {
   font-size: 1.2em;
   margin: 5px 0;
+}
+
+
+
+/* Social main page */
+/* Social Main Content Styling */
+.social-main-content {
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Honeycomb Grid Container */
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px; /* Adjust as needed */
+  margin-top: 20px;
+}
+
+/* Hexagon Shape */
+.social-cell {
+  width: 100px;
+  height: 115px; /* Adjust height to maintain hexagonal proportions */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  position: relative;
+  transition: transform 0.3s ease;
+  border: 3px solid white;
+}
+
+/* Adjust Image Inside Hexagon */
+.social-icon {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Centering the Grid */
+@media (min-width: 600px) {
+  .social-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .social-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
