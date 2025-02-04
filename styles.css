@@ -56,68 +56,14 @@
   padding: 10px;
   color: #ffffff; /* White to highlight */
 }
+
 /* Social Page Specific Styles */
 .social-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.social-icons {
-  display: grid;
-  grid-template-columns: repeat(5, 80px); /* 5 columns for each social icon */
-  gap: 20px;
-  justify-content: center;
-}
-
-.social-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  background-color: #dedada;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-}
-
-.social-icon.active {
-  background-color: #ffffff; /* Highlight the active icon */
-}
-
-.social-icon img {
-  width: 40px;
-  height: 40px;
-}
-
-.social-icon span {
-  display: none; /* Initially hide platform names */
-  position: absolute;
-  background-color: #464342;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  top: -35px;
-}
-
-.social-icon:hover span {
-  display: block; /* Show platform names on hover */
-}
-/* Social page - main content */
-.social-main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 50px;
-  background-color: #f4f4f4;
+  background-color: #000000; /* Set background to black */
 }
 
 /* Honeycomb layout - Flex container for the pattern */
@@ -157,3 +103,62 @@
   border: 2px solid #0077b6; /* Add border to active cell */
 }
 
+/* Social page - main content */
+.social-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+/* Social Icons grid layout */
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 80px); /* 5 columns for each social icon */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Social icon styling */
+.social-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #dedada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon.active {
+  background-color: #ffffff; /* Highlight the active icon */
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon span {
+  display: none; /* Initially hide platform names */
+  position: absolute;
+  background-color: #464342;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  top: -35px;
+}
+
+.social-icon:hover span {
+  display: block; /* Show platform names on hover */
+}
