@@ -8,7 +8,7 @@
 .sidebar {
   background-color: #464342; /* Sidebar background color */
   width: 80px; /* Adjust the width as needed */
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
