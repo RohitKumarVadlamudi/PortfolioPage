@@ -1,22 +1,139 @@
-/* index.html */
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      background-color: #1f1f1f;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #f0f0f0;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      background-color: #333;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .resume-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .resume-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #444;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #666;
+    }
+  </style>
 </head>
-<body>
-    <nav>
-        <a href="/projects.html">Background</a>
-        <a href="/social.html">Social Media</a>
-    </nav>
-    <div class="main">
-        <img src="/static/your-photo.jpg" alt="Your Photo" class="profile-pic">
-        <h1>Rohit Kumar Vadlamudi</h1>
-        <p>Email: rohitkumarvadlamudi@gmail.com</p>
-        <p>Phone: +1 (647)-580-6342</p>
-        <p>Location: Toronto, ON, Canada</p>
+<body class="dark">
+  <div class="logo" onclick="openNav()">
+    <img src="logo.png" alt="Logo" width="40" height="40">
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#projects" onclick="closeNav()">Projects</a>
+    <a href="#resume" onclick="closeNav()">Resume</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
+  </div>
+
+  <header>
+    <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
+    <p>Email: <a href="mailto:[your-email@example.com]">[your-email@example.com]</a></p>
+    <p>Phone: [Your Phone Number]</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>[A short professional summary or personal statement goes here.]</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>[Project Title 1]</h3>
+      <p>[Brief description of project 1]</p>
     </div>
+    <div class="project">
+      <h3>[Project Title 2]</h3>
+      <p>[Brief description of project 2]</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume-section">
+    <h2>My Resume</h2>
+    <a class="resume-button" href="resume.pdf" download>Download Resume (PDF)</a>
+  </section>
+
+  <footer id="contact">
+    <p>Connect with me:</p>
+    <ul class="social-links">
+      <li><a href="[Twitter URL]">Twitter</a></li>
+      <li><a href="[LinkedIn URL]">LinkedIn</a></li>
+      <li><a href="[GitHub URL]">GitHub</a></li>
+      <li><a href="[Instagram URL]">Instagram</a></li>
+      <li><a href="[Facebook URL]">Facebook</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </body>
 </html>
